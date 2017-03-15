@@ -1,0 +1,21 @@
+#calculator {
+  width : 500px;
+  height: 500px;
+  background: light-grey;
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+
+#displayArea{
+  width: 90%;
+  height: 60px;
+  background: grey;
+  margin: 15px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#userInputArea{
+  background: rgba(0,0,0,0.2);
+}
