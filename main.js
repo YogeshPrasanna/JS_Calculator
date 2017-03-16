@@ -16,7 +16,7 @@ $('#clear').on('click',function(){
 })
 
 $('body').on('keypress',function(e){
-  if(e.charCode >= 49 && e.charCode <= 57){
+  if(e.charCode >= 42 && e.charCode <= 57){
       switch(e.charCode){
         case 49 : $('#displayArea').append('1');
                   break;
@@ -35,6 +35,16 @@ $('body').on('keypress',function(e){
         case 56 : $('#displayArea').append('8');
                   break;
         case 57 : $('#displayArea').append('9');
+                  break;
+        case 42 : $('#displayArea').append('*');
+                  break;
+        case 43 : $('#displayArea').append('+');
+                  break;
+        case 45 : $('#displayArea').append('-');
+                  break;
+        case 46 : $('#displayArea').append('.');
+                  break;
+        case 47 : $('#displayArea').append('/');
                   break;
         default : $("displayArea").append('');
                   break;
