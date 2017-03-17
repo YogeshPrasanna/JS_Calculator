@@ -1,3 +1,10 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
 #calculator {
   width : 500px;
   height: 500px;
@@ -18,4 +25,15 @@
 
 #userInputArea{
   background: rgba(0,0,0,0.2);
+}
+
+.btn{
+  width: 40px;
+  height: 40px;
+  border: 2px solid lightgrey;
+  border-radius: 15px;
+  box-shadow: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: orange;
 }

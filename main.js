@@ -1,16 +1,27 @@
+//append numbers to userdisplay
 $('.numbers').on('click',function() {
   $('#displayArea').append(Number(this.innerHTML));
 });
+
+//append symbols to userdisplay
 $('.symbols').on('click',function() {
   $('#displayArea').append(this.innerHTML);
 });
 
-$('#calculate').on('click',function(){
-  var inputval = $('#displayArea').text();
-  var output = eval(inputval);
+//calclation logic
+var calculate = function calculate(inputa){
+  let output = eval(inputa);
   $('#displayArea').text('');
   $('#displayArea').append(output);
-})
+}
+
+//evaluate userinput
+$('#calculate').on('click',function(){
+  var userInput = $('#displayArea').text();
+  calculate(userInput);
+});
+
+//clear userinput
 $('#clear').on('click',function(){
   $('#displayArea').text('');
 })
@@ -52,4 +63,18 @@ $('body').on('keypress',function(e){
   }else{
     console.log("You just presssed something other than a number");
   }
-})
+});
+
+$('body').on('keydown',function(e){
+  switch(e.which){
+    case 8 : var inputOnBkSpc = $('#displayArea').text().substr(0,$('#displayArea').text().length - 1);
+             $('#displayArea').text(inputOnBkSpc);
+             break;
+    case 13 : var userInput = $('#displayArea').text();
+              let output = eval(userInput);
+              $('#displayArea').text('');
+              $('#displayArea').append(output);
+              break;
+    default: break;
+  }
+});
