@@ -1,12 +1,18 @@
 <html>
 <head>
     <title>Calculator | Javascript</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div id="calculator">
+        <div id="displayAreaExpr"></div>
         <div id="displayArea"></div>
         <div id="userInputArea">
+            <div id="line0">
+                <button class="btn" id="clear"> C </button>
+                <button class="symbols btn" id="" style="width:330px;">%</button>        
+            </div>
             <div id="line1">
                 <button class="numbers btn" id="num1">1</button>
                 <button class="numbers btn" id="num2">2</button>
@@ -26,7 +32,7 @@
                 <button class="symbols btn" id="multiply">*</button>
             </div>
             <div id="line4">
-                <button class="btn" id="clear"> C </button>                
+                <button class="symbols btn" id="."> . </button>                
                 <button class="numbers btn" id="num0">0</button>
                 <button class="btn" id="calculate"> = </button>                    
                 <button class="symbols btn" id="divide">/</button>

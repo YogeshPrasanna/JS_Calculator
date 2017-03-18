@@ -1,6 +1,6 @@
 #calculator {
   width : 485px;
-  height: 450px;
+  height: 570px;
   margin: 0 auto;
   margin-top:200px;
   background: #585858;
@@ -15,14 +15,29 @@
   border: 3px solid rgb(161, 183, 161);
   margin: 15px;
   color: #000;
+  text-align: right;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 50px;
+  padding-left:15px;
+  /*font-weight: bold;*/
+}
+
+#displayAreaExpr{
+  width: 90%;
+  height: 20px;
+  background: #C5D8C5;
+  border: 3px solid rgb(161, 183, 161);
+  margin: 15px;
+  margin-bottom: -15px;
+  color: #000;
+  font-size: 20px;
   padding-left:15px;
   font-weight: bold;
 }
 
 #userInputArea{
   padding:15px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.3);
 }
 
 .btn{
@@ -30,12 +45,23 @@
   height: 70px;
   margin:5px;
   border: 2px solid lightgrey;
-  border-radius: 15px;
-  box-shadow: none;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 50px;
   color: grey;
   background: #EDEDED;
+  -moz-box-shadow:    1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow:         1px 1px 1px 1px #C5D8C5;
+}
+
+.btn:hover{
+  color: orange;
+  background: #585858;
+  -moz-box-shadow:    1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow:         1px 3px 1px 1px #C5D8C5;
+
 }
 
 #calculate{
