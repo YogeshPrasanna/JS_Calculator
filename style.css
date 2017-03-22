@@ -1,11 +1,37 @@
+body{
+  background: linear-gradient(
+    to bottom right,  
+    #2C3E50, #FD746C, 
+    #FF8235, #ffff1c, 
+    #92FE9D, #00C9FF, 
+    #a044ff, #e73827);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  animation: gradient 240s ease infinite;
+}
+
+#note{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  background: #585858;
+  color: #C5D8C5;
+  font-family: 'Fjalla One', sans-serif;
+  font-size:20px;
+  letter-spacing:2px;
+  padding:10px;
+  text-align:center;
+}
+
 #calculator {
   width : 485px;
   height: 570px;
   margin: 0 auto;
   margin-top:200px;
   background: #585858;
-  border: 3px solid grey;
-  border-radius: s10px;
+  padding-top:3px;
+  border-radius: 10px;
 }
 
 #displayArea{
