@@ -95,3 +95,8 @@ body{
   color: grey;
   border: none;
 }
+
+/*removes the outline after clicking a button*/
+*:focus{
+  outline: none;
+}
